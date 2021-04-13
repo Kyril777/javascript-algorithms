@@ -11,3 +11,15 @@ let reverseWords = string => {
 
   return reversed.join(" ");
 };
+
+
+const _reverseWords = string =>
+  string
+    .split(" ")
+    .map(word =>
+      word
+        .split("")
+        .reverse()
+        .join("")
+    )
+    .join(" ");
