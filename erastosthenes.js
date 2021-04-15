@@ -15,3 +15,29 @@ const primes = number => {
   );
 };
 
+
+
+
+let primegenerator = (n) => {
+    let array = [], upperLimit = Math.sqrt(n), primes = [];
+
+    for (let i = 0; i < n; i++) {
+        array.push(true);
+    }
+
+    for (let i = 2; i <= upperLimit; i++) {
+        if (array[i]) {
+            for (var j = i * i; j < n; j += i) {
+                array[j] = false;
+            }
+        }
+    }
+
+    for (let i = 2; i < n; i++) {
+        if(array[i]) {
+            primes.push(i);
+        }
+    }
+
+    return primes;
+};
