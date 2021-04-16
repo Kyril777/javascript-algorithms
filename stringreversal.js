@@ -14,3 +14,11 @@ const _reversal = string => {
 
 const __reversal = string =>
   string.split("").reduce((result, character) => character + result);
+
+
+const reverseString = string {
+  if (str === "")
+    return "";
+  else
+    return reverseString(str.substr(1)) + str.charAt(0);
+}
