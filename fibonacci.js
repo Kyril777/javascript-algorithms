@@ -9,3 +9,14 @@ let fiboseries = (entry) => {
   return sum;
   }
 };
+
+
+const fibonacci = (n) =>{
+  fibStore = {};
+   if (n<= 1) return n;
+if (fibStore[n]) {
+   return fibStore[n];
+}
+   fibStore[n] = fibDP(n - 1) + fibDP(n - 2);
+   return fibStore[n];
+}
