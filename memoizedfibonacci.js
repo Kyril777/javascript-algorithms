@@ -10,3 +10,20 @@ const memoizedfibonacci = (element, cache = []) => {
   }
   return cache[element];
 };
+
+const _memoize = fn => {
+  const cache = {};
+  return (...args) => {
+    if (cache[args]) return cache[args];
+
+    const output = fn.apply(this, args);
+    cache[args] = output;
+    return output;
+  };
+};
+
+const _fibonacci = element =>
+  element < 2
+    ? element
+    : _memoized_fibonacci(element - 1) + _memoized_fibonacci(element - 2);
+const _memoized_fibonacci = _memoize(_fibonacci);
