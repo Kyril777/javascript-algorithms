@@ -15,3 +15,16 @@ const factorial = (n) => {
     return 1;
  } return n * factorial(n-1);       
 };
+
+
+/* Another factorial using recursion. */
+let factorial = function fac(num) {
+  if(num === 1){
+    return 1;
+  } 
+  return num *fac(num - 1);
+}
+
+let final = factorial(5);
+
+
