@@ -1,0 +1,29 @@
+<html>  
+    <head>
+        <script>
+            const myArray = ["a", "b", "c"];
+
+            // Looping through myArray.
+        //  for(let i=0; i<myArray.length; i++){
+        //      console.log(`index: ${i}, value: ${myArray[i]}`);
+        //  }
+            // The loop starts at zero since arrays start at zero.
+
+
+            // To stop the loop before the 1 iteration (the 2nd element), use the break command..
+            for(let i=0; i<myArray.length; i++){
+                if(i===1) break;
+                console.log(`index: ${i}, value: ${myArray[i]}`);
+            }
+
+            // To skip the 1 iteration, (2nd element, use the continue command).
+            for(let i=0; i<myArray.length; i++){
+                if(i===1) continue;
+                console.log(`index: ${i}, value: ${myArray[i]}`);
+            }
+
+            
+        </script>
+    </head>
+
+</html>

@@ -1,0 +1,50 @@
+<html>  
+    <head>
+        <script>
+        // The while loop loops through a code block as long as a specified condition is true.
+        
+        // let i = 0;
+        // while(i<=5) {
+        //    console.log(i);
+        //     i++;
+       //  }
+        // To ensure that we would exit the loop at some point, we should increase i. 
+
+        // Let us try the while loop with an array.
+    //    const myArray = ["a", "b", "c"];
+    //    let i = 0;
+    //    while(i<myArray.length){
+    //        console.log(`index: ${i}, value: ${myArray[i]}`);
+    //        i++;
+    //    }
+
+        // The for loop is usually used if the number of iterations is known in advanced. 
+        // The while loop should be used when we know the ending condition but not the number of iterations.
+
+        // The break can also be applied.
+        // const myArray = ["a", "b", "c"];
+        // let i = 0;
+        // while(i<myArray.length){
+        //    if(i===1) break;
+        //    console.log(`index: ${i}, value: ${myArray[i]}`);
+        //    i++;
+        // }
+
+        // By executing the continue, the execution is skipped to the following expressions and we move on to the next iteration.
+        // But by skipping execution, i will not increase and will still be equal to 1. And this will fall into an infinite loop.
+        // To avoid this trap, we should increase the value of i before continuing.
+        const myArray = ["a", "b", "c"];
+        let i = 0;
+        while(i<myArray.length){
+            if(i===1) {
+                i++;
+                continue;
+            }
+            console.log(`index: ${i}, value: ${myArray[i]}`);
+            i++;
+        }
+
+        </script>
+    </head>
+
+</html>
