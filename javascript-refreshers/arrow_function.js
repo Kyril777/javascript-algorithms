@@ -1,3 +1,33 @@
+/*
+Source: Web Dev Simplified.
+How to convert regular functions into arrow functions. 
+1. Remove the function keyword because the function is already assumed. 
+2. Assign the actual function into a variable and set it equal to what is left over.
+3. Add in the arrow right after the parameters. Everything after the arrow is assumed to be returned. If there is one single parameter, remove the parantheses. 
+*/
+
+/* Examples: */
+
+function add(x, y) {
+	return x + y
+}
+
+let add2 = (x, y) => x + y
+
+
+function printPositive(digit) {
+	return digit >= 0
+}
+
+let printPositive2(digit) => digit >= 0
+
+
+function randomNumber() {
+	return Math.random
+}
+
+let randomNumber2 = () => Math.random
+
 /* 
 Arrow functions are not that useful when you have to narrow down the code that you have to write. The arrow functions really shine when you have to write anonymous functions that have no name. 
 But what makes arrow functions really great is that they re-define the ‘this’ keyword inside of them as opposed to the other way. 
