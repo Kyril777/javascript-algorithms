@@ -19,7 +19,7 @@ function printPositive(digit) {
 	return digit >= 0
 }
 
-let printPositive2(digit) => digit >= 0
+let printPositive2 = (digit) => digit >= 0
 
 
 function randomNumber() {
