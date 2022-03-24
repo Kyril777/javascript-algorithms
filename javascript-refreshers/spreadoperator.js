@@ -7,11 +7,13 @@ const fullFamily = [...parents, ...kids];
 
 
 /* We can use spread as many times as we want in a given expression: */
+
 const parents = ["Lorie", "Steve"]; 
 const kids = ['Jake', "Annie", "Jess"]; 
 const dogs = ['Olie', 'Cosmo']; 
 
 const fullFamily = [...parents, ...kids, "Me", ...dogs, "Unnamed Turtle"]; 
+
 
 /* we can use spread to combine existing objects. */ 
 
