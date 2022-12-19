@@ -14,3 +14,14 @@ const birds = ["canary", "osprey", "rook"];
 for (const x of birds) {
   console.log(x)
 }
+
+/* Loop that displays the sum of natural numbers. */
+let sum = 0;
+const n = 50
+
+// Loop from i = 1 to n.  In each iteration, i is increased by 1
+for (let i = 1; i <= n; i++) {
+    sum += i;  // sum = sum + i
+}
+
+console.log('sum:', sum);
