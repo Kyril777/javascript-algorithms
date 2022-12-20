@@ -25,3 +25,22 @@ for (let i = 1; i <= n; i++) {
 }
 
 console.log('sum:', sum);
+
+
+/* Print a set of prime numbers from 1 to 100. */
+let isPrime = true;
+ 
+console.log("Prime numbers from 1 to 100 are: ");
+let peak = 100;
+for(let i=2; i <= peak; i++){
+  for(let j=2; j < i - 1; j++){
+    if(i % j == 0){
+      isPrime = false;
+      break;
+    }
+  }
+  if(isPrime){
+    console.log(i);
+  }
+  isPrime = true;
+}
