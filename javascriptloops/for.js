@@ -44,3 +44,10 @@ for(let i=2; i <= peak; i++){
   }
   isPrime = true;
 }
+
+/* A nested loop. The inner loop will run all its iterations for each iteration of the outer loop. */
+for (let outer = 0; outer < 2; outer += 1) {
+  for (let inner = 0; inner < 3; inner += 1) {
+    console.log(`${outer}-${inner}`);
+  }
+}
