@@ -51,3 +51,18 @@ for (let outer = 0; outer < 2; outer += 1) {
     console.log(`${outer}-${inner}`);
   }
 }
+
+// Use a for loop to loop through an object.
+const beef = {
+  name: 'Wagyu',
+  country: 10,
+  city: 'Japan'
+};
+
+
+for (const [key, value] of Object.entries(beef)) {
+  console.log(`${key}: ${value}`);
+}
+
+// Output: "name: Wagyu", "country: 10", "city: Japan"
+
